@@ -41,37 +41,37 @@ export class SerieAFactory implements IFootballFactory {
   }
 }
 
-export class BayernMunchen implements ITeam {
+class BayernMunchen implements ITeam {
   public GetTeamColor(): string {
-    return "Bundesliga-Bayern Munchen: Red and White";
+    return "Bundesliga-Bayern Munchen -> Red and White";
   }
 }
 
-export class Milan implements ITeam {
+class Milan implements ITeam {
   public GetTeamColor(): string {
-    return "SerieA-Milan: Black and Red";
+    return "SerieA-Milan -> Black and Red";
   }
 }
 
-export class RealMadrid implements ITeam {
+class RealMadrid implements ITeam {
   public GetTeamColor(): string {
-    return "LaLiga-Real Madrid: Blue and White";
+    return "LaLiga-Real Madrid -> Blue and White";
   }
 }
 
-export class BundesligaPlayer implements IPlayer {
+class BundesligaPlayer implements IPlayer {
   public GetTopScorer(): string {
     return "Robert Lewandowski";
   }
 }
 
-export class LaLigaPlayer implements IPlayer {
+class LaLigaPlayer implements IPlayer {
   public GetTopScorer(): string {
     return "Karim Benzema";
   }
 }
 
-export class SerieAPlayer implements IPlayer {
+class SerieAPlayer implements IPlayer {
   public GetTopScorer(): string {
     return "Ciro Immobile";
   }

@@ -1,11 +1,18 @@
 import styles from "../styles/Home.module.css";
-import { LaLigaFactory, FootballWorld } from "../utils/abstract-factory";
+import {
+  LaLigaFactory,
+  FootballWorld,
+  BundesLigaFactory,
+  SerieAFactory,
+} from "../utils/abstract-factory";
 
 const abstract = () => {
-  const spain = new LaLigaFactory();
+  //const league = new BundesLigaFactory();
+  //const league = new SerieAFactory();
+  const league = new LaLigaFactory();
   const getLeague = new FootballWorld();
-  const team = getLeague.Team(spain);
-  const player = getLeague.Player(spain);
+  const team = getLeague.Team(league);
+  const player = getLeague.Player(league);
 
   const color = team.GetTeamColor();
   const topScorer = player.GetTopScorer();
