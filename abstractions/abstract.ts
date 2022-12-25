@@ -49,7 +49,6 @@ export abstract class Team implements ITeam {
 }
 
 export class BasketballTeam extends Team {
-
   constructor(name: string, teamColor: string) {
     super(TeamType.basketball, name, teamColor);
   }
@@ -64,7 +63,6 @@ export class BasketballTeam extends Team {
 }
 
 export class FootballTeam extends Team {
-
   constructor(name: string, color: string) {
     super(TeamType.football, name, color);
   }

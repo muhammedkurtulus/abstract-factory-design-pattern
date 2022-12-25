@@ -40,10 +40,10 @@ export default function Home() {
         <b>Team Name : |Team Colors | Team Player Count | Enum Team Type |</b>
         <br />
         {chicagobulls.name} : | {lakers.getTeamColor()} |{" "}
-         {lakers.getPlayerCount()} | {lakers.getTeamType()} |
+        {lakers.getPlayerCount()} | {lakers.getTeamType()} |
         <br />
         {realmadrid.name} : |{realmadrid.getTeamColor()} |{" "}
-         {realmadrid.getPlayerCount()} | {realmadrid.getTeamType()} |
+        {realmadrid.getPlayerCount()} | {realmadrid.getTeamType()} |
       </main>
     </>
   );
